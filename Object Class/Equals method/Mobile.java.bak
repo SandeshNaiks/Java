@@ -1,0 +1,23 @@
+class Mobile
+{
+	int cost;
+	String brand;
+	String colour;
+	Mobile(int cost,String brand,String colour)
+	{
+		this.cost=cost;
+		this.brand=brand;
+		this.colour=colour;
+	}
+	 boolean equals(Object obj)
+	{
+		Mobile m2=(Mobile)obj;
+		return this.cost=m2.cost;
+	}
+	public static void main(String[] args)
+	{
+		Mobile m1=new Mobile(69000,"oneplus","Black");
+		Mobile m2=new Mobile(69000,"Samsung","Blue");
+		System.out.println(m1.equals(m2));
+	}
+}

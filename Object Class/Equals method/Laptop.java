@@ -1,0 +1,23 @@
+class Laptop
+{
+	int cost;
+	String brand;
+	String colour;
+	Laptop(int cost,String brand,String colour)
+	{
+		this.cost=cost;
+		this.brand=brand;
+		this.colour=colour;
+	}
+	public boolean equals(Object obj)
+	{
+		Laptop m2=(Laptop)obj;
+		return this.brand==m2.brand;
+	}
+	public static void main(String[] args)
+	{
+		Laptop m1=new Laptop(69000,"ASUS","Black");
+		Laptop m2=new Laptop(69000,"Lenovo","Blue");
+		System.out.println(m1.equals(m2));
+	}
+}

@@ -1,0 +1,29 @@
+class Amazon
+{
+	static void order()
+	{
+		System.out.println("order is placed");
+	}
+	static String confirmation()
+	{
+		return "order is confirmed";
+	}
+	static String payment()
+	{
+		return "payment is done";
+	}
+	static String delivery()
+	{
+		return "the product is delivered";
+	}
+	public static void main(String[] args)
+	{
+		order();
+		String x=confirmation();
+		System.out.println(x);
+		String y=payment();
+		System.out.println(y);
+		String z=delivery();
+		System.out.println(z);
+	}
+}
